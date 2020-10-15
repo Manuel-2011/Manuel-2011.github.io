@@ -282,9 +282,9 @@ header a:hover {
 	color: rgb(190, 221, 255);
 }
 /* dropdown menu */
-/* .dropdown-menu {
+.dropdown-menu {
 	display: none; 
-} */
+}
 /* new classes when the dropdown menu is activated */
 li.activated {
 	display: block;
@@ -310,7 +310,7 @@ button.activated {
 }
 
 /* media query to show the dropdown menu */
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	.dropdown-menu {
 		display: inline-block;
 		font-size: 1.6em;
@@ -339,7 +339,7 @@ button.activated {
 		color: rgba(0, 0, 0, 0.8);
 		font-weight: 600;
 	}
-} */
+}
 
 /* white-box class, a style for self-contained simple sections */
 .white-box {
