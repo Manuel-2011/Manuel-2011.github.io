@@ -1,0 +1,556 @@
+/* Importing webfonts */
+/* (If you're learning CSS, you should disregard that) */
+
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
+
+
+/* CSS reset rules */
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Fonts and colors */
+
+body {
+	font-family: 'Josefin Sans', serif;
+	color: rgba(0, 0, 0, 0.8);
+}
+h1, h2, h3, h4, h5, h6, header {
+	font-family: 'Yeseva One', sans-serif;
+}
+article {
+}
+header {
+	border-bottom: 1px solid rgb(221,221,221);
+	transition: border-bottom-color 1s ease;
+}
+header a {
+	color: rgba(0, 0, 0, 0.8);
+}
+aside {
+	background: #FAFAFA;
+}
+aside p {
+	border: 1px solid #bbb;
+	background: #ddd;
+	color: black;
+}
+footer a {
+	color: rgba(0, 0, 0, 0.8);
+}
+a {
+	color: #F80002;
+}
+
+
+/* Positioning and margins */
+
+@media (min-width: 1100px) {
+	body {
+		width: 1100px;
+		margin: 0 auto;
+	}
+}
+
+article {
+	padding: 50px 15px;
+}
+article > *:first-child {
+	margin-top: 0;
+}
+aside {
+	padding: 50px 15px;
+}
+header .right {
+	float: right;
+	margin: 0 10px 15px;
+}
+
+
+/* Header */
+header {
+	padding: 20px 0;
+	height: 80px;
+}
+header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+header li {
+	display: inline;
+	vertical-align:middle;
+}
+header li:first-child {
+	margin: 0;
+}
+header li a {
+	margin: 0 10px;
+}
+header li.logo {
+	font-size: 36px;
+}
+header a {
+	text-decoration: none;
+}
+
+
+/* Aside */
+
+aside p {
+	border-radius: 10px;
+	padding: 20px 20px;
+}
+
+
+/* Footer */
+
+footer {
+	padding: 5px 15px;
+	height: 80px;
+}
+
+
+/* Text styles and margins */
+
+p {
+	margin-bottom: 15px;
+}
+h1 {
+	font-size: 36px;
+	margin: 40px 0 20px;
+}
+h2 {
+	font-size: 32px;
+	margin: 30px 0 15px;
+}
+h3 {
+	font-size: 28px;
+	margin: 25px 0 10px;
+}
+h4 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 20px 0 10px;
+}
+h5 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 15px 0 10px;
+}
+h6 {
+	font-weight: bold;
+	margin: 5px 0;
+}
+
+@media (max-width: 800px) {
+  body.works_on_smartphone {
+  	display: block;
+  }
+  body.works_on_smartphone main {
+  	display: block;
+  }
+  header .right {
+  	float: none;
+  }
+}
+
+/* image JS challenge */
+
+img {
+	max-width: 100%;
+}
+
+img.small {
+	width: 100px;
+}
+
+/* NEW PERSONALIZE CODE BY MANUEL MOSQUERA */
+
+/* Holberton positioning task */
+body {
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+}
+main {
+	display: flex;
+	flex-direction: row;
+}
+main article {
+	flex: 2;
+	overflow-y: auto;
+}
+main aside {
+	flex: 1;
+	overflow-y: auto;
+}
+
+/* font of the web page and general rules*/
+* {
+	font-family: 'Poppins', sans-serif;
+	text-justify: auto;
+	line-height: 1.3em;
+}
+h1, h2, h3, h4 {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	line-height: 1em;
+}
+h1.title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 3.5em;
+	margin: 10% 0;
+	text-align: center;
+}
+h2 {
+	font-weight: 800;
+	margin-bottom: 10%;
+}
+h3 {
+	font-weight: 700;
+}
+button {
+	cursor: pointer;
+}
+
+/* navbar */
+header {
+	background-color: rgb(12, 60, 122);
+	background: linear-gradient(90deg,rgb(12, 60, 122),rgb(12, 91, 175));
+	border-radius: 10px;
+	margin-top: 10px;
+	box-shadow: -14px 14px 11px 2px rgba(0, 0, 0, 0.2);
+}
+header a {
+	color: #fff;
+	transition: 0.5s;
+}
+header ul {
+	padding: 20px;
+}
+header a.active {
+	color: rgb(145, 198, 255);
+}
+header a:hover {
+	font-size: 1.1em;
+	color: rgb(190, 221, 255);
+}
+/* dropdown menu */
+/* .dropdown-menu {
+	display: none; 
+} */
+/* new classes when the dropdown menu is activated */
+li.activated {
+	display: block;
+	background: linear-gradient(45deg, rgb(13, 132, 255),rgb(226, 226, 226));
+	position: relative;
+	left: 50vw;
+	padding: 10px;
+	border: solid 1px rgb(0, 0, 0);
+	border-radius: 5px;
+	transition: 1s;
+}
+ li.activated:hover a:hover { /*deactivate the effect on the nav links */
+	font-size: 1em;
+	color: #fff;
+}
+li.activated:hover {
+	background: linear-gradient(45deg, rgb(12, 60, 122),rgb(226, 226, 226));
+}
+
+button.activated {
+	position: relative;
+	top: -237px;
+}
+
+/* media query to show the dropdown menu */
+/* @media screen and (max-width: 800px) {
+	.dropdown-menu {
+		display: inline-block;
+		font-size: 1.6em;
+		background: rgba(29, 119, 234, 0.5);
+		color: #FAFAFA;
+		margin-left: 62vw;
+		padding: 5px 10px;
+		border: 0;
+		border-radius: 5px;
+		box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.2);
+	}
+	header ul li {
+		display: none;
+	}
+	header .logo {
+		display: inline;
+		position: relative;
+	}
+	header ul {
+		display: inline-block;
+	}
+	header {
+		padding-bottom: 39px;
+	}
+	header a.active { 
+		color: rgba(0, 0, 0, 0.8);
+		font-weight: 600;
+	}
+} */
+
+/* white-box class, a style for self-contained simple sections */
+.white-box {
+	border-radius: 20px;
+	box-shadow: 0px 0px 11px 8px rgba(199, 199, 199, 0.2);
+	padding: 20px;
+	margin-bottom: 10%;
+}
+.white-box img {
+	margin: 20px auto;
+	display: block;
+	border-radius: 5px;
+}
+.white-box a {
+	color: rgb(123, 116, 116);
+}
+/* image of the introduction section */
+#smart_thumbnail {
+	cursor: pointer;
+}
+small {
+	text-align: center;
+	display: block;
+	font-size: 0.8em;
+}
+
+/* grid for places to go on the index page */
+.places-to-go {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 30px;
+}
+.place {
+	border-radius: 10px;
+	box-shadow: 0px 0px 11px 8px rgba(199, 199, 199, 0.2);
+	transition: 0.5s;
+}
+.place img {
+	border-radius: 10px 10px 0 0;
+	width: 100%;
+	height: 200px;
+}
+.place p {
+	margin: 27px;
+}
+.place a {
+	color: rgb(123, 116, 116);
+	text-decoration: none;
+}
+.place:hover {
+	background-color: rgb(12, 60, 122);
+	box-shadow: 2px 2px 5px 5px rgba(151, 151, 151, 0.8);
+}
+.place:hover h3{
+	color: rgb(123, 116, 116);
+}
+.place:hover p {
+	color: rgb(202, 202, 202)
+}
+
+/* footer */
+footer {
+	background-color: rgb(12, 60, 122);
+	background: linear-gradient(90deg,rgb(12, 60, 122),rgb(12, 91, 175));
+	color: rgb(221,221,221);
+	border-radius: 0 0 10px 10px;
+	margin: 10px 0;
+	box-shadow: -14px 14px 11px 2px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	padding: 20px;
+}
+footer a {
+	color: rgb(221,221,221);
+}
+
+/* TWEETS PAGE */
+
+/* tweets div */
+.twitter-tweet {
+	margin: 10px auto;
+}
+
+/* TYPES PAGE */
+
+/* selector style */
+#select-form {
+	margin: 20px auto;
+	border-radius: 10px;
+	color: rgb(123, 116, 116);
+	display: block;
+	font-size: 1.5em;
+}
+
+/* SPECIAL OFFERS PAGE */
+
+/* table of prices */
+.prices-table {
+	display: flex;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.8);
+	border-width: 2px;
+	border-radius: 10px;
+	margin: 20px auto;
+}
+.prices-table h4 {
+	height: 100px;
+	margin-top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(200, 200, 261, 0.9);
+}
+.prices-table .item-price {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-right: 1px solid rgb(123, 116, 116);
+}
+.prices-table .item-price:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.item-price .price {
+	margin: 30px auto;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.item-price .description {
+	color: rgb(123, 116, 116);
+	font-size: 0.8em;
+	margin-left: 5px;
+}
+
+/* recommendation button */
+
+.main-button {
+	display: none; /*set to none initially and activated when the apis are done */
+	border-radius: 10px;
+	border: solid 0;
+	margin: 80px auto 40px;
+	padding: 20px;
+	background-color: rgb(0, 124, 255);
+	color: rgb(255, 255, 255);
+	box-shadow: -9px 9px 7px 2px  rgba(29, 119, 234, 0.34);
+	transition: 0.5s;
+}
+.main-button:hover {
+	margin-top: 70px;
+	margin-bottom: 50px;
+	padding: 20px;
+	box-shadow: -9px 9px 7px 5px  rgba(29, 119, 234, 0.5);
+}
+
+/* carousel */
+.carousel {
+	position: relative;
+	height: 0px;
+	width: 50%;
+	margin: 0 auto;
+}
+.carousel-track img {
+	width: 100%;
+	object-fit: cover;
+}
+.carousel-container {
+	height: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+.carousel-track {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	height: 100%;
+	transition: transform 0.5s ease-in-out;
+}
+.carousel-slide {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 80%;
+	transition: 0.5s;
+}
+.carousel-slide.current-slide {
+	width: 100%;
+}
+.carousel-button {
+	display: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: white;
+	border-radius: 10px;
+	border: 0;
+	cursor: pointer;
+	z-index: 1;
+	font-size: 1.5em;
+	;
+}
+.carousel-button--left {
+	left: -40px;
+}
+.carousel-button--right {
+	right: -40px;
+}
+/* media query to adjust the movies carousel */
+@media screen and (max-width: 800px) {
+	.carousel-button {
+		top: 36%;
+	}
+	.carousel {
+		margin-bottom: -300px;
+	}
+}
