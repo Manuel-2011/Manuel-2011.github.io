@@ -4,7 +4,6 @@
 // variables to call the weather API
 const cityName = "Bogota";
 const countryCode = "COL";
-//const APIkey = "855971739e6a7ef592316c873d8da059";
 const weatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityName},${countryCode}&appid=${APIkey}&units=metric`;
 
 // initialize the isGoodDay variable to false in case the api fails
