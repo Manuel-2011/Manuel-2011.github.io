@@ -7,9 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link href="https://www.holbertonschool.com/level2/school.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <script src="keys.js"></script>
-    <script src="weatherAPI.js"></script>
+    <link href="../css/styles.css" rel="stylesheet">
+    <script src="../js/wikiAPI.js"></script>
     <script src="https://kit.fontawesome.com/08a9335605.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway" rel="stylesheet">
   </head>
@@ -31,10 +30,10 @@
           <a href="./tweets.html">Tweets</a>
         </li>
         <li>
-          <a href="./types.html">Types of ice creams</a>
+          <a class="active" href="./types.html">Types of ice creams</a>
         </li>
         <li>
-          <a class="active" href="./offers.html">Special offers</a>
+          <a href="./offers.html">Special offers</a>
         </li>
       </ul>
       <!-- <button class="dropdown-menu">
@@ -44,25 +43,25 @@
 
     <main>
       <article>
-        <h1 class="title">Special offers</h1>
-        <div class="white-box" id="prices">
+        <h1 class="title">Types of ice cream</h1>
+        <select id="select-form" name="ice-cream-types">
+            <option value="Ais kacang">Ais kacang</option>
+            <option value="Booza">Booza</option>
+            <option value="Dondurma">Dondurma</option>
+            <option value="Frozen custard">Frozen custard</option>
+            <option value="Frozen yogurt">Frozen yogurt</option>
+            <option value="Gelato">Gelato</option>
+            <option value="Halo-halo">Halo-halo</option>
+            <option value="Ice cream sandwich">Ice cream sandwich</option>
+            <option value="Ice milk">Ice milk</option>
+            <option value="Ice pop">Ice pop</option>
+            <option value="Kulfi">Kulfi</option>
+            <option value="Patbingsu">Patbingsu</option>
+            <option value="Sorbet">Sorbet</option>
+            <option value="Snow cones">Snow cones</option>
+        </select>
+        <div class="white-box" id="summary">
         </div>
-        <div class="button">
-          <button class="main-button">Get movie recommendations</button>
-        </div>
-        <div class="carousel">
-          <button class="carousel-button carousel-button--left">
-            <i class="fas fa-chevron-circle-left"></i>
-        </button>
-          <div class="carousel-container">
-            <ul class="carousel-track">
-            </ul>
-          </div>
-          <button class="carousel-button carousel-button--right">
-            <i class="fas fa-chevron-circle-right"></i>
-        </button>
-        </div>
-        
       </article>
 	    <aside>
 	      <div id="disqus_thread"></div>
@@ -73,8 +72,8 @@
 	    	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 		
 		    var disqus_config = function () {
-		    this.page.url = 'http://34.227.60.238/offers.html';  // Replace PAGE_URL with your page's canonical URL variable
-	    	this.page.identifier = 'offers'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		    this.page.url = 'http://34.227.60.238/types.html';  // Replace PAGE_URL with your page's canonical URL variable
+	    	this.page.identifier = 'types'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 		    };
 		
 		    (function() { // DON'T EDIT BELOW THIS LINE
@@ -94,8 +93,6 @@
 	      <a href="https://www.holbertonschool.com">Holberton School</a>
 	    </p>
     </footer>
-    <script src='moviesAPI.js'></script>
-    <script src='carousel.js'></script>
     <!-- dropdown script -->
 	  <!-- <script src="dropdown.js"></script> -->
   </body>
