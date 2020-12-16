@@ -4,7 +4,7 @@
 // variables to call the weather API
 const cityName = "Bogota";
 const countryCode = "COL";
-const weatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityName},${countryCode}&appid=${APIkey}&units=metric`;
+const weatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityName},${countryCode}&appid=${WEATHER_API_KEY}&units=metric`;
 
 // initialize the isGoodDay variable to false in case the api fails
 let isGoodDay = false;

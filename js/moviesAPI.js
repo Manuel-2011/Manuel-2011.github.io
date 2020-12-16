@@ -20,7 +20,7 @@ function getMovies() {
 	                "method": "GET",
 	                "headers": {
 		            "x-rapidapi-host": "imdb8.p.rapidapi.com",
-		            "x-rapidapi-key": rapidApiKey
+		            "x-rapidapi-key": RAPID_API_KEY
                     }
                     })
                     .then((resp) => resp.json())
